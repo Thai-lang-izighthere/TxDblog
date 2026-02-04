@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Bài hát – Đàm Vĩnh Hưng</title>
+
+<style>
+/* ===== MÀU CHỦ ĐẠO ===== */
+:root{
+    --xanh-ngoc: #1abc9c;
+    --xanh-dam: #148f77;
+    --trang: #ffffff;
+    --nen-nhat: #f4fdfb;
+}
+
+/* ===== CHUNG ===== */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--nen-nhat);
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header{
+    background: linear-gradient(90deg, var(--xanh-ngoc), var(--xanh-dam));
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+/* ===== KHUNG CHÍNH ===== */
+.container{
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: var(--trang);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(26,188,156,0.25);
+}
+
+/* ===== TIÊU ĐỀ PHẦN ===== */
+.container h2{
+    color: var(--xanh-dam);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ===== CA KHÚC NỔI BẬT ===== */
+.highlight{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    background-color: #e8fbf7;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.highlight img{
+    width: 260px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(26,188,156,0.4);
+}
+
+.highlight p{
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* ===== DANH SÁCH BÀI HÁT ===== */
+.song-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.song{
+    background-color: #ffffff;
+    border: 2px solid var(--xanh-ngoc);
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.song:hover{
+    box-shadow: 0 0 15px rgba(26,188,156,0.5);
+    transform: translateY(-3px);
+}
+
+.song h3{
+    margin-top: 0;
+    color: var(--xanh-dam);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.song p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ===== NÚT QUAY VỀ ===== */
+.back{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: var(--xanh-ngoc);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back:hover{
+    background-color: var(--xanh-dam);
+    box-shadow: 0 0 12px rgba(26,188,156,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎵 Bài hát tiêu biểu</h1>
+</header>
+
+<div class="container">
+
+    <h2>⭐ Ca khúc nổi bật</h2>
+
+    <div class="highlight">
+        <!-- Ảnh đại diện ca khúc -->
+        <img src="anh5.webp" alt="Lỗi tải hình ảnh">
+
+        <p>
+            Trong sự nghiệp âm nhạc của mình, Đàm Vĩnh Hưng đã ghi dấu ấn
+            mạnh mẽ với nhiều ca khúc được khán giả yêu thích.
+            Những bài hát của anh thường mang màu sắc trữ tình,
+            giàu cảm xúc và dễ chạm đến trái tim người nghe.
+            <br><br>
+            Các ca khúc không chỉ thành công về mặt thương mại
+            mà còn góp phần khẳng định phong cách âm nhạc riêng
+            của Đàm Vĩnh Hưng trong làng nhạc Việt.
+        </p>
+    </div>
+
+    <h2>🎶 Một số bài hát tiêu biểu</h2>
+
+    <div class="song-list">
+        <div class="song">
+            <h3>Xin Lỗi Tình Yêu</h3>
+            <p>
+                Ca khúc gắn liền với tên tuổi Đàm Vĩnh Hưng,
+                mang giai điệu sâu lắng và đầy cảm xúc.
+            </p>
+        </div>
+
+        <div class="song">
+            <h3>Say Tình</h3>
+            <p>
+                Bài hát thể hiện rõ giọng ca nội lực
+                và phong cách trữ tình đặc trưng của anh.
+            </p>
+        </div>
+
+        <div class="song">
+            <h3>Bình Minh Sẽ Mang Em Đi</h3>
+            <p>
+                Ca khúc nhẹ nhàng, sâu sắc,
+                được nhiều khán giả yêu thích qua nhiều năm.
+            </p>
+        </div>
+
+        <div class="song">
+            <h3>Biển Tình</h3>
+            <p>
+                Một bản tình ca nổi tiếng,
+                được Đàm Vĩnh Hưng thể hiện rất thành công.
+            </p>
+        </div>
+    </div>
+
+    <a href="Diễm Và Thái 12A1.html" class="back">⬅ Quay về Trang chủ</a>
+
+</div>
+
+</body>
+</html>
