@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Giới thiệu Đàm Vĩnh Hưng</title>
+
+<style>
+/* ===== MÀU CHỦ ĐẠO ===== */
+:root{
+    --xanh-ngoc: #1abc9c;
+    --xanh-dam: #148f77;
+    --trang: #ffffff;
+    --xam-nhe: #f4fdfb;
+}
+
+/* ===== CÀI ĐẶT CHUNG ===== */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--xam-nhe);
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header{
+    background: linear-gradient(90deg, var(--xanh-ngoc), var(--xanh-dam));
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600; /* không quá dày */
+}
+
+/* ===== KHUNG NỘI DUNG ===== */
+.container{
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: var(--trang);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(26,188,156,0.25);
+}
+
+/* ===== TIÊU ĐỀ PHẦN ===== */
+.container h2{
+    color: var(--xanh-dam);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ===== ẢNH GIỚI THIỆU ===== */
+.profile{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile img{
+    width: 220px;
+    border-radius: 12px;
+    border: 4px solid var(--xanh-ngoc);
+}
+
+/* ===== ĐOẠN VĂN ===== */
+.profile p{
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* ===== NÚT QUAY VỀ ===== */
+.back{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: var(--xanh-ngoc);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back:hover{
+    background-color: var(--xanh-dam);
+    box-shadow: 0 0 12px rgba(26,188,156,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Giới thiệu Đàm Vĩnh Hưng</h1>
+</header>
+
+<div class="container">
+
+    <h2>👤 Thông tin chung</h2>
+
+    <div class="profile">
+        <!-- ẢNH: đổi tên file ảnh cho đúng -->
+        <img src="anh3.webp" alt="Lỗi tải hình ảnh">
+
+        <p>
+            Đàm Vĩnh Hưng là một trong những ca sĩ nổi bật của nền âm nhạc Việt Nam
+            đương đại. Anh được khán giả yêu mến bởi giọng hát giàu cảm xúc,
+            phong cách biểu diễn mạnh mẽ và cá tính riêng biệt.
+            <br><br>
+            Với hơn hai thập kỷ hoạt động nghệ thuật, Đàm Vĩnh Hưng đã để lại
+            nhiều dấu ấn sâu đậm qua các ca khúc trữ tình, nhạc pop và những
+            sân khấu trình diễn hoành tráng.
+        </p>
+    </div>
+
+    <h2>🎵 Hành trình âm nhạc</h2>
+    <p>
+        Sự nghiệp của Đàm Vĩnh Hưng gắn liền với nhiều album thành công,
+        các liveshow quy mô lớn và hàng loạt giải thưởng âm nhạc.
+        Anh không chỉ là ca sĩ mà còn là biểu tượng phong cách
+        của làng giải trí Việt Nam.
+    </p>
+    <a href="Diễm Và Thái 12A1.html" class="back">⬅ Quay về Trang chủ</a>
+
+</div>
+
+</body>
+</html>

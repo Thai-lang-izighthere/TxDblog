@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- Khai báo đây là tài liệu HTML5 -->
+
+<html lang="vi">
+<!-- Thẻ html, lang="vi" cho biết trang web sử dụng tiếng Việt -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Khai báo bảng mã UTF-8 để hiển thị đúng tiếng Việt -->
+
+    <title>Thông tin lớp 12A1</title>
+    <!-- Tiêu đề hiển thị trên tab trình duyệt -->
+
+    <style>
+        /* CSS dùng để trang trí giao diện */
+
+        body {
+            font-family: Arial, sans-serif;
+            /* Chọn font chữ Arial, dễ đọc */
+
+            background-color: #eaf3ff;
+            /* Màu nền xanh nhạt cho toàn trang */
+        }
+
+        .container {
+            width: 650px;
+            /* Độ rộng khung nội dung */
+
+            margin: 60px auto;
+            /* Căn giữa khung theo chiều ngang */
+
+            padding: 25px;
+            /* Khoảng cách từ viền vào nội dung */
+
+            background-color: #ffffff;
+            /* Nền trắng cho khung */
+
+            border: 2px solid #9ec5ff;
+            /* Viền màu xanh nhạt */
+        }
+
+        h1 {
+            text-align: center;
+            /* Căn giữa tiêu đề */
+
+            color: #1f4fd8;
+            /* Màu chữ tiêu đề */
+
+            font-size: 28px;
+            /* Kích thước chữ tiêu đề */
+        }
+
+        .member {
+            display: flex;
+            /* Sắp xếp ảnh và chữ nằm ngang */
+
+            align-items: center;
+            /* Căn giữa theo chiều dọc */
+
+            margin-top: 25px;
+            padding: 20px;
+
+            border: 1px solid #c7dcff;
+            /* Viền mỗi thành viên */
+
+            background-color: #f7fbff;
+            /* Màu nền nhẹ cho từng khối */
+        }
+
+        .member img {
+            width: 140px;
+            height: 140px;
+            /* Kích thước ảnh */
+
+            border: 2px solid #6fa8ff;
+            /* Viền ảnh */
+
+            margin-right: 25px;
+            /* Khoảng cách giữa ảnh và chữ */
+
+            object-fit: cover;
+            /* Giữ ảnh không bị méo */
+        }
+
+        .info p {
+            font-size: 18px;
+            margin: 10px 0;
+            /* Khoảng cách giữa các dòng chữ */
+
+            color: #333;
+        }
+
+        .label {
+            font-weight: bold;
+            /* In đậm chữ */
+
+            color: #0b3fa5;
+            /* Màu chữ nhấn */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Phần thân trang web, nơi hiển thị nội dung -->
+
+    <div class="container">
+        <!-- Khung chứa toàn bộ nội dung -->
+
+        <h1>DANH SÁCH THÀNH VIÊN</h1>
+
+        <div class="member">
+            <!-- Khối thông tin của Nguyễn Phú Thái -->
+
+            <img src="pthai.jpg" alt="Ảnh Nguyễn Phú Thái">
+            <!-- Hiển thị ảnh đại diện -->
+
+            <div class="info">
+                <p><span class="label">Họ tên:</span> Nguyễn Phú Thái</p>
+                <p><span class="label">Chức vụ:</span>Thành viên</p>
+                <p><span class="label">Lớp</span> 12A1</p>
+            </div>
+        </div>
+
+        <div class="member">
+            <!-- Khối thông tin của Huỳnh Thị Ngọc Diễm -->
+
+            <img src="ngocdiem.jpg" alt="Ảnh Huỳnh Thị Ngọc Diễm">
+
+            <div class="info">
+                <p><span class="label">Họ tên:</span> Huỳnh Thị Ngọc Diễm</p>
+                <p><span class="label">Chức vụ:</span>Nhóm trưởng</p>
+                <p><span class="label">Lớp:</span> 12A1</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
