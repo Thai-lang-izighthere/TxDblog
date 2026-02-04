@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ca Sĩ Đàm Vĩnh Hưng</title>
+	<style type="text/css">
+		*{font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: 400;}
+		.init{margin: 20px;
+			padding: 10px;
+			border-style: solid;
+		    background-color: #000000;
+		    border-radius: 12px;
+		    font-family: verdana;
+		    font-size: 18px;
+            font-weight: 400;
+	        color: #1B3A4B;
+	        box-shadow: 0 4px 12px rgba(0,0,0,0.08);}
+		.header{display: flex;
+			color: #1B3A4B:;
+			background: linear-gradient(135deg, #E8F6F3, #F4FFFD);
+            padding: 10px;
+			align-items: center;
+			border-radius: 8px;}
+		.logo{flex: 1;
+			text-align: center;}
+		.logo img{max-height: 120px;}
+		.title{ flex: 3;
+		        font-size: 32px;
+		        font-weight: 600;
+                letter-spacing: 0.5px;
+		        color: #219EBC;
+		        text-align: center;
+		        font-family: "segoe ui semibold", "segoe ui", Roboto, sans-serif; }
+		 /*Định dạng cho thanh menu*/
+		 nav{background-color: #2EC4B6;
+		 	border-radius: 10px;
+		 	overflow: hidden;
+		 	margin: 20px;
+		 	justify-content: space-around;
+            align-items: center;
+		 	display: flex;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+		 nav a{ float: left;
+		 	display: block;
+		 	color: #ffffff;
+		 	border-radius: 6px;
+		 	transition: 0.3s;
+		 	text-align:center;
+		 	padding: 15px;
+		 	text-decoration:none;
+		 	font-family:'poppins', 'segoe ui', arial, sans-serif;
+		 	font-weight:500;
+            letter-spacing: 1px; }
+		 /*Hiệu ứng khi di chuột vào liên kết*/
+		 nav a: hover{ background-color:#219EBC;
+		 	color: #ffffff; }
+		 /*Định dạng menu con*/
+		 .dropdown{float: left;
+		 	overflow: hidden;}
+		 .dropdown .dropbtn{font-size: 16px;
+		 	border: none;
+		 	outline: none;
+		 	color: #ffffff;
+		    padding: 14px 16px;
+		    background-color: inherit;
+		    font-family: Tahoma;
+		    margin: 0;
+        font-weight:500;
+            letter-spacing: 0.3px; }
+		.dropdown-content{display: none;
+			position: absolute;
+			background-color: #ffffff;
+			border-radius: 10px;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+			z-index: 1; }
+		/* CSS link trong menu con */
+.dropdown-content a{
+    float: none;
+    color: #1A3B4A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-family: Tahoma;
+}
+
+/* Hiệu ứng khi di chuột vào liên kết trong menu */
+.dropdown-content a:hover{
+    background-color: #E8F6F3;
+    color: #219EBC;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.main{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px; /* Giãn khoảng cách giữa các ô */
+}
+
+.box{
+    flex: 1 1 calc(50% - 20px);
+    padding: 10px;
+    border: 1px solid #2EC4B6;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #1B3A4B;
+    font-family: Verdana;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.box:hover{transform: translateY(-4px);}
+/* Chân trang */
+.footer{
+    color: #219EBC;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #E8F6F3;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.08);
+    font-family: Tahoma;
+    font-weight: ;
+}
+
+h1{
+    font-family: 'Bebas Neue', 'Anton', Arial, sans-serif;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #1aa6a6;
+    text-transform: uppercase;
+
+    text-shadow:
+        1px 1px 0 #0f6f6f,
+        2px 2px 0 #0c5a5a,
+        3px 3px 6px rgba(0,0,0,0.3);
+}
+body::before{content: "";
+display: block;
+height: 10px;
+background: linear-gradient(90deg, #2EC4B6, #219EBC);}
+/* ===== HIỆU ỨNG HOVER MENU ===== */
+nav{
+    display: flex;
+    gap: 10px;
+}
+
+/* Áp dụng cho link và nút dropdown */
+nav a,
+nav .dropbtn{
+    position: relative;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        opacity 0.35s ease,
+        background-color 0.35s ease;
+}
+
+/* Khi hover vào thanh menu → các mục khác mờ đi */
+nav:hover a,
+nav:hover .dropbtn{
+    opacity: 0.45;
+    transform: scale(0.95);
+}
+
+/* Mục đang được hover */
+nav a:hover,
+nav .dropbtn:hover{
+    opacity: 1;
+    transform: scale(1.15);
+    background-color: #219EBC;
+    box-shadow:
+        0 0 12px rgba(255,255,255,0.6),
+        0 0 25px rgba(33,158,188,0.8);
+    z-index: 10;
+}
+
+/* Fix lỗi hover cũ */
+nav a:hover{
+    color: #ffffff;
+}
+
+</style>
+</head>
+<body>
+<div class="init header">
+    <div class="logo">
+        <img class="logo" src="logo.jpg">
+    </div>
+    <div class="title">
+        <h1>ĐÀM VĨNH HƯNG - DẤU ẤN MỘT GIỌNG CA</h1>
+    </div>
+</div>
+
+<!-- Thanh menu -->
+<nav>
+    <a href="#home">Trang chủ</a>
+    <a href="gioithieu.html">Giới thiệu</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Lựa chọn</button>
+        <div class="dropdown-content">
+            <a href="baihat.html">Bài hát</a>
+            <a href="tieusu.html">Tiểu sử</a>
+            <a href="drama.html">Drama</a>
+        </div>
+    </div>
+
+    <a href="lienhe.html">Liên hệ</a>
+    <a href="thanhvien.html" target="_blank">Về chúng tôi</a>
+    <a href="https://ngoccs.edu.vn/" target="_blank">Giáo viên hướng dẫn</a>
+</nav>
+<!-- Nội dung chính -->
+<div class="main">
+
+    <!-- Ô 1: THƠ CA -->
+    <div class="box">
+        <h1>CA KHÚC NỔI BẬT </h1>
+        <table>
+            <tr style="font-style: italic;">
+                <td width="500";>
+                    "Xin lỗi tình yêu, đã mang đến cho em nhiều nỗi buồn..." (Xin lỗi tình yêu) <br>
+                    "Bình minh sẽ mang em đi, trả em về với những giấc mơ xưa..." (Bình minh sẽ mang em đi) <br>
+                    "Anh đã quá yêu em, yêu đến quên đi chính mình..." (Vùng trời bình yên) <br>
+                </td>
+                <td>
+                    Những ca từ nổi bật <br>
+                    trong các ca khúc <br>
+                    của Đàm Vĩnh Hưng
+                </td>
+            </tr>
+            <tr style="font-style: italic;">
+                <td width="500";><b style="color: red;">Một số bài hát nổi bật của Đàm Vĩnh Hưng</b> <br>
+                1.Đừng hỏi anh như thế <br>
+                2.Say tình <br>
+                3.Nửa vầng trăng <br>
+                4.Anh còn nợ em <br>
+                5.Lâu đài tình ái <br>
+                6.Biển tình <br>
+                7.Không phải em đúng không<br>
+                8.Tình ơi xin ngủ yên<br>
+                9.Dạ khúc cho tình nhân <br>
+                10.Mãi mãi bên em<br>
+            </td>
+            </tr>
+        </table>
+        <p style="color:red;"><em>Đàm Vĩnh Hưng</em></p>
+    </div>
+
+    <!-- Ô 2: Nội dung 2 -->
+    <div class="box">
+        <h1>HÌNH ẢNH</h1>
+        <div style="display: flex;"><img src="anh1.webp" alt="Err" style="width:50%; height:auto;"> <img src="anh2.jpg" alt="Err" style="width:50%; height: auto; "></div>
+        <p style="color:red;"><b>Hình ảnh ca sĩ Đàm Vĩnh Hưng</b></p>  
+    </div>
+
+    <!-- Ô 3: Nội dung 3 -->
+    <div class="box">
+        <h1>ÂM NHẠC</h1>
+        <p style="color:red;"><b>Bài hát: Hai mùa noel</b></p>
+        <audio controls>
+            <source src="Hai Mùa Noel.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Ô 4: Danh mục Video -->
+    <div class="box">
+         <h1>VIDEO</h1>
+        <video controls src="video.mp4"; height="400px"; width="400px"></video>
+           
+    </div>
+
+</div>
+
+<!-- Form góp ý -->
+<div class="init" style="background-color:lightskyblue; box-shadow: 0 0 8px;">
+    <p>Đóng góp ý kiến:</p>
+
+    <form>
+        <p>Họ và tên:<br>
+        <input type="text"></p>
+
+        <p>Email:<br>
+        <input type="email"></p>
+
+        <p>Ý kiến góp ý:<br>
+        <textarea rows="4" cols="40"></textarea></p>
+
+        <p>
+            <input type="submit" value="Gửi">
+            <input type="reset" value="Nhập lại">
+        </p>
+    </form>
+</div>
+
+<!-- Footer -->
+<div class="init footer">
+    <div style="color: darkblue;">
+        <b>👥 NHÓM: Huỳnh Thị Ngọc Diễm, Nguyễn Phú Thái ❤</b>
+    </div>
+    <div style="color:darkblue;">
+        📍 Địa chỉ: Lớp 12A1 – THPT NBK – Gia Lai
+    </div>
+    <div style="color:darkblue;">
+        ✉ Email: nle87586@gmail.com, nguyenphuthai000@gmail.com
+    </div>
+</div>
+</body>
+</html>
