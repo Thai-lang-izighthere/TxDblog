@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Liên hệ – Đàm Vĩnh Hưng</title>
+
+<style>
+/* ===== MÀU CHỦ ĐẠO ===== */
+:root{
+    --xanh-ngoc: #1abc9c;
+    --xanh-dam: #148f77;
+    --trang: #ffffff;
+    --nen-nhat: #f4fdfb;
+}
+
+/* ===== CHUNG ===== */
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--nen-nhat);
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header{
+    background: linear-gradient(90deg, var(--xanh-ngoc), var(--xanh-dam));
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin: 0;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+/* ===== KHUNG CHÍNH ===== */
+.container{
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: var(--trang);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(26,188,156,0.25);
+}
+
+/* ===== TIÊU ĐỀ ===== */
+.container h2{
+    color: var(--xanh-dam);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* ===== THÔNG TIN LIÊN HỆ ===== */
+.contact-info p{
+    line-height: 1.7;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* ===== FORM ===== */
+form{
+    margin-top: 20px;
+}
+
+label{
+    font-weight: 500;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 2px solid var(--xanh-ngoc);
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+textarea{
+    resize: none;
+    height: 120px;
+}
+
+button{
+    background-color: var(--xanh-ngoc);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: var(--xanh-dam);
+    box-shadow: 0 0 12px rgba(26,188,156,0.6);
+}
+
+/* ===== NÚT QUAY VỀ ===== */
+.back{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: var(--xanh-ngoc);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.back:hover{
+    background-color: var(--xanh-dam);
+    box-shadow: 0 0 12px rgba(26,188,156,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📞 Liên hệ</h1>
+</header>
+
+<div class="container">
+
+    <h2>📌 Thông tin liên hệ</h2>
+    <div class="contact-info">
+        <p>📧 Email: damvinhhung@example.com</p>
+        <p>🌐 Fanpage: facebook.com/damvinhhung</p>
+        <p>📍 Lĩnh vực: Âm nhạc – Biểu diễn nghệ thuật</p>
+    </div>
+
+    <h2>✍️ Gửi lời nhắn</h2>
+    <form>
+        <label>Họ và tên:</label>
+        <input type="text" placeholder="Nhập họ tên của bạn">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Nhập email của bạn">
+
+        <label>Nội dung:</label>
+        <textarea placeholder="Nhập nội dung liên hệ..."></textarea>
+
+        <button type="submit">Gửi liên hệ</button>
+    </form>
+
+    <a href="index.html" class="back">⬅ Quay về Trang chủ</a>
+
+</div>
+
+</body>
+</html>
